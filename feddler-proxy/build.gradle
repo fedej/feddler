@@ -1,0 +1,22 @@
+group 'ar.com.fmj.feddler'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'ar.com.fmj.feddler.ProxyApp'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.undertow', name: 'undertow-core', version: '1.4.18.Final'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.8'
+}
+
+//run {
+//    args findProperty('runArgs')
+//}
